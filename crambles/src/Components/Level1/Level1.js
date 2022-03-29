@@ -9,14 +9,22 @@ import { FormControl } from 'react-bootstrap';
 const Level1 = () => {
     const [guess, setGuess] = useState('');
     const [feedback, setFeedback] = useState('');
-    const [button, setButton] = useState('')
+    const [button1, setButton1] = useState('')
+    const [button2, setButton2] = useState('')
     const CheckAnswer = () => {
         if (WordList[0].answer === guess) {
             setFeedback("you got it right!")
+            setButton2("go to level 2")
+            setButton1('')
         } else {
             setFeedback("nope") 
-            setButton("Try Again")
+            setButton1("Try Again")
             }
+    }
+    const tryAgain = () => {
+        setGuess('');
+        setButton1('');
+        setFeedback('');
     }
 
 
@@ -49,7 +57,13 @@ const Level1 = () => {
             </Button>
             </InputGroup>
         <div>{feedback}</div>
-        <Button onClick={() => setGuess('')} style={{ display: button === 'Try Again' ? "inline" : "none" }}>{button}</Button>
+        
+        <Button onClick={() => tryAgain()} style={{ display: button1 === 'Try Again' ? "inline" : "none" }}>{button1}</Button>
+      
+
+        <Link to='/Level2' className='toLevelTwo'>
+                <Button onClick={() => setGuess('')} style={{ display: button2 === 'go to level 2' ? "inline" : "none" }}>{button2}</Button>
+        </Link>
         </>
      );
 };
