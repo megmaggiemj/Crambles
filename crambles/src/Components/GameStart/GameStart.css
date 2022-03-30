@@ -1,0 +1,37 @@
+
+.intro {
+    background-image: url('https://i.imgur.com/qdtP9F8.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+}
+
+.intro .player {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    box-shadow: 2px 2px 5px black;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro .toLevelOneButton {
+    transition: transform 0.3s ease-out;
+    box-shadow: 1px 1px 2px .5px black;
+    align-content: center;
+}
+.intro .toLevelOneButton:hover {
+    transform: translateY(3px);
+    color: black;
+    text-decoration: none;
+}
+.intro .toLevel1 {
+    color: Black;
+    text-decoration: none;
+}
