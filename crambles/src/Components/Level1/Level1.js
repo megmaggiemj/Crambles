@@ -7,18 +7,24 @@ import { FormControl } from "react-bootstrap";
 
 
 const Level1 = () => {
+  const randomIndex = Math.floor(Math.random() * WordList.length); //this is the number in the array
+
   const [guess, setGuess] = useState("");
   const [feedback, setFeedback] = useState("");
   const [button1, setButton1] = useState("");
   const [button2, setButton2] = useState("");
-
-  const randomIndex = Math.floor(Math.random() * WordList.length); //this is the number in the array
+  const [userInput, setUserInput] = useState("");
+  const [randomNumber, setRandomNumber] = useState(randomIndex);
+  
   const Word = WordList[randomIndex]; //this is the random string;
+// console.log(randomIndex)
+// console.log(Word)
+
 
   const CheckAnswer = (event) => {
-    let input = event.target.value.toLowerCase();
-    setGuess(input);
-    if (WordList[randomIndex].answer === guess) {
+    event.preventDefault()
+    setGuess(userInput)
+    if (WordList[randomNumber].answer === guess) {
       setFeedback("you got it right!");
       setButton2("go to level 2");
       setButton1("");
@@ -34,9 +40,15 @@ const Level1 = () => {
   };
 
   const onChange = (event) => {
+    event.preventDefault();
     let input = event.target.value.toLowerCase();
     setGuess(input);
   };
+
+  //   const onChange = (event) => {
+  //   let input = event.target.value.toLowerCase();
+  //   setUserInput(input);
+  // };
 
   return (
     <>
@@ -47,7 +59,7 @@ const Level1 = () => {
           <p className="Level1">This will be the game intro</p>
 
           <div className="Word1">
-            This is the word to unscramble: {WordList[randomIndex].scrambledWord}
+            This is the word to unscramble: {WordList[randomNumber].scrambledWord}
           </div>
         </div>
       </div>

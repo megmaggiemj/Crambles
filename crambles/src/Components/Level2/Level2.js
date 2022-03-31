@@ -6,6 +6,7 @@ import { Button } from "react-bootstrap";
 import { FormControl } from "react-bootstrap";
 
 const Level2 = () => {
+  
   const [guess, setGuess] = useState("");
   const [feedback, setFeedback] = useState("");
   const [button1, setButton1] = useState("");
