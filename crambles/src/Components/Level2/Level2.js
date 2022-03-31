@@ -6,13 +6,17 @@ import { Button } from "react-bootstrap";
 import { FormControl } from "react-bootstrap";
 
 const Level2 = () => {
-  
+
+  const randomIndex = Math.floor(Math.random() * Riddles.length); //this is the number in the array
+
   const [guess, setGuess] = useState("");
   const [feedback, setFeedback] = useState("");
   const [button1, setButton1] = useState("");
   const [button2, setButton2] = useState("");
+  const [randomNumber, setRandomNumber] = useState(randomIndex);
+
   const CheckAnswer = () => {
-    if (Riddles[0].answer[0] === guess || Riddles[0].answer[1] === guess) {
+    if (Riddles[randomNumber].answer[0] === guess || Riddles[randomNumber].answer[1] === guess) {
       setFeedback("you got it right!");
       setButton2("go to level 3");
       setButton1("");
@@ -39,7 +43,7 @@ const Level2 = () => {
 
           <p className="Level1">This will be the game intro</p>
 
-          <div className="Word1">This is the RIDDLE!!: {Riddles[0].riddle}</div>
+          <div className="Word1">This is the RIDDLE!!: {Riddles[randomNumber].riddle}</div>
         </div>
       </div>
 

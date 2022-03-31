@@ -1,0 +1,23 @@
+.container {
+    text-align: center;
+    transform: translate(50%, 150%);
+
+}
+.col1 {
+    border: 2px solid black;
+    height: 30px;
+    width: 30px;
+    margin-bottom: 15px;
+}
+.col2 {
+    border: 2px solid black;
+    height: 30px;
+    width: 30px;
+    margin-bottom: 15px;
+}
+.col3 {
+    border: 2px solid black;
+    height: 30px;
+    width: 30px;
+    margin-bottom: 15px;
+}

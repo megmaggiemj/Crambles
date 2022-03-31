@@ -13,17 +13,10 @@ const Level1 = () => {
   const [feedback, setFeedback] = useState("");
   const [button1, setButton1] = useState("");
   const [button2, setButton2] = useState("");
-  const [userInput, setUserInput] = useState("");
   const [randomNumber, setRandomNumber] = useState(randomIndex);
-  
-  const Word = WordList[randomIndex]; //this is the random string;
-// console.log(randomIndex)
-// console.log(Word)
-
 
   const CheckAnswer = (event) => {
     event.preventDefault()
-    setGuess(userInput)
     if (WordList[randomNumber].answer === guess) {
       setFeedback("you got it right!");
       setButton2("go to level 2");
