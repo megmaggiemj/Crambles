@@ -1,31 +1,32 @@
-.container {
+.boxContainer {
     text-align: center;
     transform: translate(0%, 50%);
-    padding: 15px;
-    margin: auto;
+    /* padding: 15px; */
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
   }
 
+.box1, .box2, .box3 {
+    margin: 0 auto;
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+}
 
-.col1 {
+.box4, .box5, .box6 {
+    margin: 0 auto;
     border: 2px solid black;
     height: 100px;
     width: 100px;
-    margin: auto;
-    transform: translate(0%, -20%)
 }
-.col2 {
-    border: 2px solid black;
-    height: 100px;
-    width: 100px;
-    margin-bottom: 15px;
-    margin: auto;
 
-}
-.col3 {
-    border: 2px solid black;
-    height: 100px;
-    width: 100px;
-    margin-bottom: 15px;
-    margin: auto;
-    transform: translate(0%, 20%)
-}
+.front {
+    background: red;
+  }
+  
+  .back {
+    background: blue;
+  }
