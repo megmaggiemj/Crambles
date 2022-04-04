@@ -17,7 +17,7 @@ const GradientTest =() => {
                 ['#80d3fe', '#7ea0c4'],
                 ['#f0ab51', '#eceba3']
               ],
-              transitionSpeed: 6000,
+              transitionSpeed: 20000,
             },
           },
         });

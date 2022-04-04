@@ -22,7 +22,7 @@ function Testing() {
                 <div className="evenMoreWords">This is the third part of the Test</div>
             </Parallax> */}
         </div> 
-        <div className="container">
+        <div className="containerTest">
                 <div className="words">
                 This is a test
                 </div>

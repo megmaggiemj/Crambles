@@ -4,7 +4,7 @@ import WordList from "./WordList";
 import { InputGroup } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 import { FormControl } from "react-bootstrap";
-
+import './Level1.css'
 
 const Level1 = () => {
   const randomIndex = Math.floor(Math.random() * WordList.length); //this is the number in the array
@@ -14,6 +14,8 @@ const Level1 = () => {
   const [button1, setButton1] = useState("");
   const [button2, setButton2] = useState("");
   const [randomNumber, setRandomNumber] = useState(randomIndex);
+
+  const bookIcon = `https://i.imgur.com/UU9nCLH.png`
 
   const CheckAnswer = (event) => {
     event.preventDefault()
@@ -46,18 +48,18 @@ const Level1 = () => {
   return (
     <>
       <div className="Level1">
-        <div className="container">
+        <div className="container1">
           <h1>Word scramble extravaganza</h1>
 
           <p className="Level1">This will be the game intro</p>
-
+          <i className="book"><img src= {bookIcon}/></i>
           <div className="Word1">
             This is the word to unscramble: {WordList[randomNumber].scrambledWord}
           </div>
         </div>
       </div>
-
-      <InputGroup className="mb-3">
+      <div className="Answer">
+      <InputGroup className="group">
         <FormControl
           onChange={onChange}
           value={guess}
@@ -74,14 +76,15 @@ const Level1 = () => {
         </Button>
       </InputGroup>
       <div>{feedback}</div>
-
-      <Button
+      <div className="L1-TryAgain">
+      <Button 
         onClick={() => tryAgain()}
         style={{ display: button1 === "Try Again" ? "inline" : "none" }}
       >
         {button1}
       </Button>
-
+      </div>
+      <div>
       <Link to="/Level2" className="toLevelTwo">
         <Button
           onClick={() => setGuess("")}
@@ -90,6 +93,8 @@ const Level1 = () => {
           {button2}
         </Button>
       </Link>
+      </div>
+      </div>
     </>
   );
 };

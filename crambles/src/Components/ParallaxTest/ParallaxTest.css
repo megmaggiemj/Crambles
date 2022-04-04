@@ -13,7 +13,7 @@
     background-size: contain;
     position: relative;
 }
-.test .container {
+.test .containerTest {
     background-color: white;
     text-align: center;
     transform: translate(0%, 200%);

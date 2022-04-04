@@ -35,7 +35,8 @@ const Level3 = () => {
 
   return (
     <>
-      <div className="boxContainer">
+    
+      <div className="container3">
         {/* { here is some statement that can be TRUE or FALSE ? if it is TRUE then do this thing : if it is FALSE then do this thing} */}
         <div
           className={box1 === true ? "box1 front" : "box1 back"}
