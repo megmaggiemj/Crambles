@@ -20,11 +20,11 @@ const Level1 = () => {
   const CheckAnswer = (event) => {
     event.preventDefault()
     if (WordList[randomNumber].answer === guess) {
-      setFeedback("you got it right!");
+      setFeedback("Yay! You got it right!");
       setButton2("go to level 2");
       setButton1("");
     } else {
-      setFeedback("nope");
+      setFeedback("Hm, that's not right. want to try again?");
       setButton1("Try Again");
     }
   };
@@ -45,19 +45,20 @@ const Level1 = () => {
   //   setUserInput(input);
   // };
 
+
   return (
     <>
       <div className="Level1">
         <div className="container1">
           <h1>Word scramble extravaganza</h1>
 
-          <p className="Level1">This will be the game intro</p>
+          <p className="L1Intro">This will be the game intro</p>
           <i className="book"><img src= {bookIcon}/></i>
           <div className="Word1">
             This is the word to unscramble: {WordList[randomNumber].scrambledWord}
           </div>
-        </div>
-      </div>
+
+
       <div className="Answer">
       <InputGroup className="group">
         <FormControl
@@ -93,6 +94,8 @@ const Level1 = () => {
           {button2}
         </Button>
       </Link>
+      </div>
+      </div>
       </div>
       </div>
     </>

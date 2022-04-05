@@ -4,6 +4,7 @@ import Riddles from "./Riddles";
 import { InputGroup } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 import { FormControl } from "react-bootstrap";
+import "./Level2.css";
 
 const Level2 = () => {
 
@@ -37,15 +38,15 @@ const Level2 = () => {
   };
   return (
     <>
-      <div className="Level1">
-        <div className="container">
+      <div className="Level2">
+        <div className="container2">
           <h1>RIDDLE GUESS THING</h1>
 
-          <p className="Level1">This will be the game intro</p>
+          <p className="riddleIntro">This will be the game intro</p>
 
-          <div className="Word1">This is the RIDDLE!!: {Riddles[randomNumber].riddle}</div>
+          <div className="Riddle">This is the RIDDLE!!: {Riddles[randomNumber].riddle}</div>
         </div>
-      </div>
+
 
       <InputGroup className="mb-3">
         <FormControl
@@ -80,6 +81,7 @@ const Level2 = () => {
           {button2}
         </Button>
       </Link>
+      </div>
     </>
   );
 };
