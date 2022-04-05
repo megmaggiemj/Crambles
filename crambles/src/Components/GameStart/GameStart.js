@@ -34,7 +34,7 @@ function GameStart() {
               { color: "#38ef7d", pos: 1 },
             ],
           ],
-          transitionSpeed: 25000,
+          transitionSpeed: 22000,
         },
       },
     });
