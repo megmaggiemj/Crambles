@@ -49,7 +49,7 @@ const Level1 = () => {
   return (
     <>
       <div className="Level1">
-        <div className="container1">
+        <div className="containerL1">
           <h1>This first game is a word scramble!</h1>
 
 

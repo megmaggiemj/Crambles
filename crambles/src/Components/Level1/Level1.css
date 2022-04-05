@@ -7,16 +7,16 @@
     background-image: url('https://i.imgur.com/YbtAdqN.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
     height: 100vh;
 }
-.container1 {
+.containerL1 {
     margin: 50px;
     background-attachment: scroll;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Verdana, sans-serif;
+    font-family: 'Rubik', sans-serif;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    font-weight: 600;
     text-shadow: 0px 1px 3px black,
         1px 1px 1px black,
         1px 1px 2px black,
@@ -41,15 +41,17 @@ img {
 }
 .group, .Answer, .L1-TryAgain, .toLevelTwo {
     text-align: center;
-    align-items: flex-start;
     justify-content: center;
     align-items: top;
     color: white;
-    font-weight: 570;
     text-shadow: 0px 1px 3px black,
                 1px 1px 1px black,
                 1px 1px 2px black;
     padding: 8px;
+}
+.L1Intro {
+    font-size: 1rem;
+    font-weight: 600;
 }
 .input {
     width: 200px;

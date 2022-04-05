@@ -14,38 +14,13 @@ function GameStart() {
 
   const monsterIcon = `https://i.imgur.com/t0Bo13f.png`;
 
-  useEffect(() => {
-    new Granim({
-      element: "#logo-canvas",
-      direction: "top-bottom",
-      opacity: [1, 1],
-      states: {
-        "default-state": {
-          gradients: [
-            [
-              { color: "#833ab4", pos: 0.2 },
-              { color: "#ff8c00", pos: 0.8 },
-              { color: "#38ef7d", pos: 1 },
-            ],
-            [
-              { color: "#40e0d0", pos: 0 },
-              { color: "#ff8c00", pos: 0.2 },
-              { color: "#ff0080", pos: 0.75 },
-              { color: "#38ef7d", pos: 1 },
-            ],
-          ],
-          transitionSpeed: 22000,
-        },
-      },
-    });
-  }, []);
+
 
   return (
     <section className="intro">
-      <div className="TEST367">
-        <div className="bloc-logo">
-          <canvas id="logo-canvas"></canvas> {/*the actual gradient */}
-          <div className="logo-mask">
+        <div className="bloc-logoStart">
+          <canvas id="logo-canvasStart"></canvas> {/*the actual gradient */}
+          <div className="logo-maskStart">
             <div className={L1p1 === true ? "display" : "hide"} id="testAgain">
               <div className="monster">
                 <img src={monsterIcon} />
@@ -107,7 +82,6 @@ function GameStart() {
             </div>
           </div>
         </div>
-      </div>
     </section>
   );
 

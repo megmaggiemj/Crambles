@@ -1,5 +1,5 @@
 .intro,
-.logo-mask {
+.logo-maskStart {
   display: grid;
 
   /* text-shadow: 2px 2px 2px black; */
@@ -8,7 +8,7 @@
   grid-gap: 0px;
 }
 
-#logo-canvas {
+#logo-canvasStart {
   height: 100vh;
   width: 100%;
   position: absolute;
@@ -22,21 +22,20 @@
 }
 .hiThere {
 font-family: 'Rubik', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 700;
   text-shadow: 0 1px 0 black,
                0 2px 0 black,
                0 2px 1px black,
                1px 2px 1px black;
 }
-.bloc-logo {
-  position: relative;
+.bloc-logoStart {
+  position: absolute;
   width: 100%;
-  height: 100vh;
+  height: 100;
   color: white;
   font-family: 'Rubik', sans-serif;
-  font-size: 1.3rem;
-  font-weight: 700;
+  font-size: 1.1rem;
   text-shadow: none;
   text-shadow: 0 1px 0 black,
                0 2px 0 black,
@@ -50,18 +49,17 @@ font-family: 'Rubik', sans-serif;
   height: 100%;
 } */
 
-.logo-mask {
+.intro {
   position: relative;
   top: 0;
   width: 100%;
-  height: cover;
+  height: 100vh;
   left: 0;
   background-size: cover;
 
   background-image: url("https://i.imgur.com/VInLTys.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  overflow: visible;
 }
 .display {
   display: visible;
@@ -77,8 +75,8 @@ font-family: 'Rubik', sans-serif;
   transition: transform 0.3s ease-out;
   animation: MoveUpDown 1s linear infinite;
 }
-.bloc-logo canvas,
-.bloc-logo .logo-mask {
+
+.bloc-logoStart .logo-maskStart {
   width: 100%;
   height: 100%;
 }

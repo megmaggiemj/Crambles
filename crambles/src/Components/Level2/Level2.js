@@ -40,7 +40,7 @@ const Level2 = () => {
     <>
       <div className="Level2">
         <div className="container2">
-          <h1 className="L2Intro">This game is a riddle!<br/>Are you good at those?</h1>
+          <h1 className="L2Intro">This game is a riddle!<br/></h1>
 
           <p className="riddleIntro">Let's give it a try!</p>
 

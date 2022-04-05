@@ -38,7 +38,7 @@ function GameFinish() {
                   className="buttonFinish"
                   onClick={() => setL1p2(!L1p2)}
                 >
-                <Link to="/"> Thanks!</Link>
+                <Link to="/">Thanks!</Link>
                 </Button>
                 {/* <Button
                   variant="outline-secondary"
