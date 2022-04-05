@@ -50,24 +50,26 @@ const Level1 = () => {
     <>
       <div className="Level1">
         <div className="container1">
-          <h1>Word scramble extravaganza</h1>
+          <h1>This first game is a word scramble!</h1>
 
-          <p className="L1Intro">This will be the game intro</p>
+
           <i className="book"><img src= {bookIcon}/></i>
-          <div className="Word1">
-            This is the word to unscramble: {WordList[randomNumber].scrambledWord}
+          <p className="L1Intro">What do you think this word is supposed to be?</p>
+          <div className="Word1">{WordList[randomNumber].scrambledWord}
           </div>
 
 
       <div className="Answer">
       <InputGroup className="group">
         <FormControl
+          className="input"
           onChange={onChange}
           value={guess}
           placeholder="What is the Word?"
           aria-label=""
           aria-describedby="basic-addon2"
         />
+        <br />
         <Button
           onClick={CheckAnswer}
           variant="outline-secondary"

@@ -18,11 +18,11 @@ const Level2 = () => {
 
   const CheckAnswer = () => {
     if (Riddles[randomNumber].answer[0] === guess || Riddles[randomNumber].answer[1] === guess) {
-      setFeedback("you got it right!");
+      setFeedback("That's it! That's the answer!");
       setButton2("go to level 3");
       setButton1("");
     } else {
-      setFeedback("nope");
+      setFeedback("I don't think that's it. Give it another shot!");
       setButton1("Try Again");
     }
   };
@@ -40,22 +40,24 @@ const Level2 = () => {
     <>
       <div className="Level2">
         <div className="container2">
-          <h1>RIDDLE GUESS THING</h1>
+          <h1 className="L2Intro">This game is a riddle!<br/>Are you good at those?</h1>
 
-          <p className="riddleIntro">This will be the game intro</p>
+          <p className="riddleIntro">Let's give it a try!</p>
 
-          <div className="Riddle">This is the RIDDLE!!: {Riddles[randomNumber].riddle}</div>
-        </div>
+          <div className="Riddle">{Riddles[randomNumber].riddle}</div>
+
 
 
       <InputGroup className="mb-3">
         <FormControl
+          className="input2"
           onChange={onChange}
           value={guess}
-          placeholder="Your Guess Here"
+          placeholder="What's the answer?"
           aria-label="Recipient's username"
           aria-describedby="basic-addon2"
         />
+        <br />
         <Button
           onClick={CheckAnswer}
           variant="outline-secondary"
@@ -64,8 +66,7 @@ const Level2 = () => {
           Submit
         </Button>
       </InputGroup>
-      <div>{feedback}</div>
-
+      <div className="feedback">{feedback}</div>
       <Button
         onClick={() => tryAgain()}
         style={{ display: button1 === "Try Again" ? "inline" : "none" }}
@@ -73,7 +74,7 @@ const Level2 = () => {
         {button1}
       </Button>
 
-      <Link to="/Level3" className="toLevelThree">
+      <Link to="/GameOver" className="toLevelThree">
         <Button
           onClick={() => setGuess("")}
           style={{ display: button2 === "go to level 3" ? "inline" : "none" }}
@@ -81,6 +82,7 @@ const Level2 = () => {
           {button2}
         </Button>
       </Link>
+      </div>
       </div>
     </>
   );

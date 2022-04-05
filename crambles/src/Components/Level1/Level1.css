@@ -3,11 +3,11 @@
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: auto;
-
     position: relative;
     background-image: url('https://i.imgur.com/YbtAdqN.png');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     height: 100vh;
 }
 .container1 {
@@ -17,20 +17,16 @@
       "Lucida Sans Unicode", Verdana, sans-serif;
     color: white;
     font-size: 1.2rem;
-    text-shadow: 0 1px 0 #ccc,
-    0 1px 1px black,
-    0 5px 0 rgb(139, 137, 137),
-    0 2px 0 darkgrey,
-    0 3px 0 gray,
-    0 4px 0 black,
-
-    0 6px 1px rgba(0,0,0,.1),
-    0 0 5px rgba(0,0,0,.1),
-    0 1px 3px rgba(0,0,0,.3),
-    0 3px 5px rgba(0,0,0,.2),
-    0 5px 10px rgba(0,0,0,.25),
-    0 10px 10px rgba(0,0,0,.2),
-    0 20px 20px rgba(0,0,0,.15);
+    text-shadow: 0px 1px 3px black,
+        1px 1px 1px black,
+        1px 1px 2px black,
+        0 6px 1px rgba(0,0,0,.1),
+        0 0 5px rgba(0,0,0,.4),
+        0 1px 3px rgba(0,0,0,.6),
+        0 3px 5px rgba(0,0,0,.4),
+        0 5px 10px rgba(0,0,0,.25),
+        0 10px 10px rgba(0,0,0,.2),
+        0 20px 20px rgba(0,0,0,.15);
     text-align: center;
     justify-content: center;
     background-color: rgba(0,0,0, 0.28);
@@ -38,16 +34,42 @@
 img {
     height: 100px;
     width: 100px;
+    transform: translate(0%, 8%);
+    transition: transform 0.6s ease-in;
+    transition: transform 0.3s ease-out;
+    animation: MoveUpDown 1s linear infinite;
 }
 .group, .Answer, .L1-TryAgain, .toLevelTwo {
     text-align: center;
     align-items: flex-start;
     justify-content: center;
     align-items: top;
-    color: orange;
-    text-shadow: 1px 1px 1px black,
-    1px 1px 2px black;
-    padding: 10px;
+    color: white;
+    font-weight: 570;
+    text-shadow: 0px 1px 3px black,
+                1px 1px 1px black,
+                1px 1px 2px black;
+    padding: 8px;
+}
+.input {
+    width: 200px;
+    height: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.Word1 {
+    font-size: 2rem;
+    text-shadow: 0px 1px 3px black,
+    1px 1px 1px black,
+    1px 1px 2px black,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.4),
+    0 1px 3px rgba(0,0,0,.6),
+    0 3px 5px rgba(0,0,0,.4),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
 }
 /* .toLevelTwo {
     display: flex;

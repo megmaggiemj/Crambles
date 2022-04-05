@@ -1,0 +1,96 @@
+
+.logo-mask-end {
+  display: grid;    
+  background: rgba(0, 0, 0, 0.5);
+  margin: 50px;
+  padding-top: 20px;
+  text-align: center;
+  grid-gap: 0px;
+}
+
+#logo-canvas-end {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  display: grid;
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+.GameOver {
+    font-family: 'Rubik Bubbles', cursive;
+    color: rgb(247, 169, 25);
+    font-size: 4rem;
+    text-shadow: 0 1px 0 black,
+                0 2px 0 black,
+                0 2px 1px black,
+                1px 2px 1px black;
+}
+.farewell {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+.bloc-logo-end {
+    
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.3rem;
+    text-shadow: 0 1px 0 black,
+                0 2px 0 black,
+                0 2px 1px black,
+                1px 2px 1px black;
+
+}
+/* .bloc-logo-end canvas,
+.bloc-logo-end .logo-mask {
+  width: 100%;
+  height: 100%;
+} */
+.outro {
+  position: absolute;
+  width: 100%;
+  height: cover;
+  left: 0;
+  background-size: cover;
+  background-image: url("https://i.imgur.com/VInLTys.jpg");
+
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: visible;
+
+}
+
+.monster {
+  margin-top: 8px;
+  margin-bottom: -42px ;
+  transform: translate(0%, 8%);
+  transition: transform 0.6s ease-in;
+  transition: transform 0.3s ease-out;
+  animation: MoveUpDown 1s linear infinite;
+}
+.bloc-logo-end canvas,
+.bloc-logo-end .logo-mask {
+  width: 100%;
+  height: 100%;
+}
+
+
+.buttonEnd{
+    margin-top: 10px ;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}

@@ -51,7 +51,7 @@ function GameStart() {
                 <img src={monsterIcon} />
               </div>{" "}
               <br />
-              <div className="hiThere">Hi there!</div>
+              <div className="hiThere">Hi there! I'm Taylor!</div>
               <div className={L1p1 === true ? "display" : "hide"}>
                 <Button
                   variant="outline-secondary"
