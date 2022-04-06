@@ -37,7 +37,7 @@ function Home() {
           <canvas id="logo-canvas"></canvas> {/*the actual gradient */}
           <div className="logo-mask1">
     <div className="homepage">
-      <div className="container">
+      <div className="container-home">
         <h1 className="name">Crambles!</h1>
         <p className="welcome">a very fun word game!</p>
         <Button variant="outline-secondary" className="toLevelOneButton">

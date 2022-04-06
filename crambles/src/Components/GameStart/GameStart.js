@@ -83,6 +83,7 @@ function GameStart() {
           </div>
         </div>
     </section>
+    
   );
 
   // at the end of the animation, a button will appear to take the player to Level1

@@ -99,6 +99,7 @@ const Level1 = () => {
       </div>
       </div>
       </div>
+      <footer className="attribution"><a href="https://www.flaticon.com/free-icons/book" title="book icons">Book icon created by Freepik - Flaticon</a></footer>
       </div>
     </>
   );

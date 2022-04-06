@@ -9,15 +9,15 @@ const Riddles = [
   },
   {
     riddle: "The more of this there is, the less you see. What is it?",
-    answer: ["darkness", "the dark"],
+    answer: ["darkness", "the dark", "dark"],
   },
   {
     riddle:
-      "I’m found in socks, scarves and mittens; and often in the paws of playful kittens. What am I?",
+      "I am found in socks, scarves and mittens; and often in the paws of playful kittens. What am I?",
     answer: ["yarn"],
   },
   {
-    riddle: "What goes up and down but doesn’t move?",
+    riddle: "What goes up and down but does not move?",
     answer: ["a staircase", "stairs"],
   },
 ];

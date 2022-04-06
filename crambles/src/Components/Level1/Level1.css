@@ -73,6 +73,11 @@ img {
     0 10px 10px rgba(0,0,0,.2),
     0 20px 20px rgba(0,0,0,.15);
 }
+.attribution a {
+    font-size: xx-small;
+    margin-left: 5px;
+    color: black;
+}
 /* .toLevelTwo {
     display: flex;
     text-align: center;

@@ -39,7 +39,7 @@
     height: 800px;
     background-size: cover;
 } */
-.midground {
+.test .midground {
     height: 200vh;
     align-content: center;
     flex-direction: column-reverse;
