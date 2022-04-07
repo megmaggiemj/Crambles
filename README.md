@@ -1,6 +1,6 @@
 
 ## CAPSTONE Project Description
-This project will be a single player multi-level text based game. There will be a bacstory describing the main character and why they need to complete the game. 
+This project will be a single player multi-level text based game. There will be a backstory describing the main character and why they need to complete the game. 
 
 the background will be animated and (time permitting) there will be a short animated into. the player will have three chances to solve each puzzle.
 
@@ -24,7 +24,6 @@ link to figma wireframe https://www.figma.com/file/YYSndKhIMeUNW2FJlPr8OP/Untitl
 - Header and Footer
 - About game page
 - Basic animated background
-- User sign in (username & password)
 - Game description on landing page  
 - Level 1 & 2  basic layout and usabiity
 - Level 3 as basic shapes and letters
