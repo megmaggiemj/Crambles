@@ -1,11 +1,4 @@
-/* .background {
-    height: 100vh;
-    background-size: cover;
-    background-color: none;
-    position: fixed;
-    width: 100vw;
-    align-content: center;
-} */
+
 .test {
     background-image: url("https://i.imgur.com/vbXatyZ.png");
     background-repeat: repeat-y;
@@ -31,21 +24,10 @@
     position: flex;
 
 }
-/* .background {
-    height: 1000px;
-} */
-/* .test2 {
-    height: 100vh;
-    height: 800px;
-    background-size: cover;
-} */
+
 .test .midground {
     height: 200vh;
     align-content: center;
     flex-direction: column-reverse;
 
 }
-
-/* .foreground {
-    height: 1000px;
-} */

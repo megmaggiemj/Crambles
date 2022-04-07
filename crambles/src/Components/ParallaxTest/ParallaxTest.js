@@ -11,7 +11,7 @@ function Testing() {
     <div className="test">
         <Parallax className="midground" bgImage={ midground } strength={ 600 } >
 
-            <div>
+            <div> {/* commented out until ready to implement */} 
             {/* <Parallax className="midground" bgImage={ midground } strength ={ 100 }>
                 <div className="moreWords">This is the second part of the Test</div>
             </Parallax>

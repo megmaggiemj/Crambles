@@ -40,11 +40,6 @@ const Level1 = () => {
     setGuess(input);
   };
 
-  //   const onChange = (event) => {
-  //   let input = event.target.value.toLowerCase();
-  //   setUserInput(input);
-  // };
-
 
   return (
     <>
