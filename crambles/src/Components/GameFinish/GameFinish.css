@@ -2,7 +2,8 @@
 .logo-mask-end {
   display: grid;    
   background: rgba(0, 0, 0, 0.5);
-  margin: 50px;
+  margin: 5%;
+  margin-top: 10%;
   padding-top: 20px;
   text-align: center;
   grid-gap: 0px;
@@ -23,7 +24,7 @@
 .GameOver {
     font-family: 'Rubik Bubbles', cursive;
     color: rgb(247, 169, 25);
-    font-size: 4rem;
+    font-size: 3rem;
     text-shadow: 0 1px 0 black,
                 0 2px 0 black,
                 0 2px 1px black,
@@ -32,10 +33,10 @@
 .farewell {
     margin-top: 30px;
     margin-bottom: 30px;
-    font-size: 2rem;
+    padding: 5%;
+    font-size: 1.5rem;
 }
 .bloc-logo-end {
-    
     position: relative;
     width: 100%;
     height: 100vh;
@@ -93,4 +94,85 @@
   50% {
     transform: translateY(-5px);
   }
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+  .GameOver {
+    font-family: 'Rubik Bubbles', cursive;
+    color: rgb(247, 169, 25);
+    font-size: 3.5rem;
+    text-shadow: 0 1px 0 black,
+                0 2px 0 black,
+                0 2px 1px black,
+                1px 2px 1px black;
+}
+.farewell {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+.bloc-logo-end {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.3rem;
+    text-shadow: 0 1px 0 black,
+                0 2px 0 black,
+                0 2px 1px black,
+                1px 2px 1px black;
+
+}
+.logo-mask-end {
+  display: grid;    
+  background: rgba(0, 0, 0, 0.5);
+  margin: 50px;
+  padding-top: 20px;
+  text-align: center;
+  grid-gap: 0px;
+}
+
+}
+
+/* DESKTOP */
+@media screen and (min-width: 992px) {
+  .GameOver {
+    font-family: 'Rubik Bubbles', cursive;
+    color: rgb(247, 169, 25);
+    font-size: 4.2rem;
+    text-shadow: 0 1px 0 black,
+                0 2px 0 black,
+                0 2px 1px black,
+                1px 2px 1px black;
+}
+.farewell {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+.bloc-logo-end {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.3rem;
+    text-shadow: 0 1px 0 black,
+                0 2px 0 black,
+                0 2px 1px black,
+                1px 2px 1px black;
+
+}
+
+.logo-mask-end {
+  display: grid;    
+  background: rgba(0, 0, 0, 0.5);
+  margin: 50px;
+  padding-top: 20px;
+  text-align: center;
+  grid-gap: 0px;
+}
+
 }

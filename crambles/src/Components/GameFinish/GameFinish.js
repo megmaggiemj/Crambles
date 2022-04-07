@@ -21,7 +21,7 @@ function GameFinish() {
         <div className="bloc-logo-end">
           <div className="logo-mask-end">
 
-              <div className="GameOver">You did it!<br />that was amazing!</div>
+              <div className="GameOver">You did it!<br />That was amazing!</div>
               <div className={L1p1 === true ? "display" : "hide"}>
               <div className="monster">
                 <img src={monsterIcon} />
