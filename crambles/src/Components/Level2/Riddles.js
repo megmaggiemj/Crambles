@@ -20,6 +20,38 @@ const Riddles = [
     riddle: "What goes up and down but does not move?",
     answer: ["a staircase", "stairs"],
   },
+  {
+    riddle: "What is always in front of you but cannot be seen?", 
+    answer: ["The future", "future"]
+  },
+  {
+    riddle: "What gets wet while drying?",
+    answer: ["a towel", "towel"]
+  },
+  {
+    riddle: "What can’t talk but will reply when spoken to?",
+    answer: ["An echo", "echo"]
+  },
+  {
+    riddle: "You walk into a room that contains a match, a kerosene lamp, a candle and a fireplace. What would you light first?",
+    answer: ["The match", "match"]
+  },
+  {
+    riddle: "I follow you all the time and copy your every move, but you can’t touch me or catch me. What am I?",
+    answer: ["Your shadow", "shadow"]
+  },
+  {
+    riddle: "What building has the most stories?",
+    answer: ["The library", "library"]
+  },
+  {
+    riddle: "What kind of coat is best put on wet?",
+    answer: ["A coat of paint", "paint", "paint coat"]
+  },
+  {
+    riddle: "I am an odd number. Take away a letter and I become even. What number am I?",
+    answer: ["Seven", "7"]
+  }
 ];
 export default Riddles;
 

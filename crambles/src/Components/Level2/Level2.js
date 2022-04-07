@@ -34,7 +34,7 @@ const Level2 = () => {
   };
 
   const onChange = (event) => {
-    let input = event.target.value.toLowerCase();
+    let input = event.target.value.toLowerCase().trim();
     setGuess(input);
   };
   return (

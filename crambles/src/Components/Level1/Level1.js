@@ -33,7 +33,7 @@ const Level1 = () => {
 
   const onChange = (event) => {
     event.preventDefault();
-    let input = event.target.value.toLowerCase();
+    let input = event.target.value.toLowerCase().trim();
     setGuess(input);
   };
 
