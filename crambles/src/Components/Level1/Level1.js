@@ -8,15 +8,12 @@ import './Level1.css'
 
 const Level1 = () => {
   const randomIndex = Math.floor(Math.random() * WordList.length); //this is the number in the array
-
   const [guess, setGuess] = useState("");
   const [feedback, setFeedback] = useState("");
   const [button1, setButton1] = useState("");
   const [button2, setButton2] = useState("");
   const [randomNumber, setRandomNumber] = useState(randomIndex);
-
   const bookIcon = `https://i.imgur.com/UU9nCLH.png`
-
   const CheckAnswer = (event) => {
     event.preventDefault()
     if (WordList[randomNumber].answer === guess) {

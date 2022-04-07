@@ -15,6 +15,7 @@ const Level2 = () => {
   const [button1, setButton1] = useState("");
   const [button2, setButton2] = useState("");
   const [randomNumber, setRandomNumber] = useState(randomIndex);
+  const lightIcon = `https://i.imgur.com/ACFhlWk.png`
 
   const CheckAnswer = () => {
     if (Riddles[randomNumber].answer[0] === guess || Riddles[randomNumber].answer[1] === guess) {
@@ -41,12 +42,10 @@ const Level2 = () => {
       <div className="Level2">
         <div className="container2">
           <h1 className="L2Intro">This game is a riddle!<br/></h1>
-
+          <i className="light"><img src= {lightIcon}/></i>
           <p className="riddleIntro">Let's give it a try!</p>
 
           <div className="Riddle">{Riddles[randomNumber].riddle}</div>
-
-
 
       <InputGroup className="mb-3">
         <FormControl
@@ -83,6 +82,7 @@ const Level2 = () => {
         </Button>
       </Link>
       </div>
+      <footer className="attribution"><a href="https://www.flaticon.com/free-icons/idea" title="idea icons">Idea icons created by Freepik - Flaticon</a></footer>
       </div>
     </>
   );

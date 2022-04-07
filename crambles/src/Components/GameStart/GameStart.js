@@ -11,17 +11,14 @@ function GameStart() {
   const [L1p3, setL1p3] = useState(false);
   const [L1p4, setL1p4] = useState(false);
   const [L1p5, setL1p5] = useState(false);
-
   const monsterIcon = `https://i.imgur.com/t0Bo13f.png`;
-
-
 
   return (
     <section className="intro">
-        <div className="bloc-logoStart">
+        <div className="bloc-logoStart"> {/*text block*/}
           <canvas id="logo-canvasStart"></canvas> {/*the actual gradient */}
           <div className="logo-maskStart">
-            <div className={L1p1 === true ? "display" : "hide"} id="testAgain">
+            <div className={L1p1 === true ? "display" : "hide"} id="Conversation">
               <div className="monster">
                 <img src={monsterIcon} />
               </div>{" "}

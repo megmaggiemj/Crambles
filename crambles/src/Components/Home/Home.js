@@ -30,39 +30,34 @@ function Home() {
       },
     });
   }, []);
-  return (    
-  <section className="intro">
+  return (
+    <section className="intro">
       <div className="TEST367">
         <div className="bloc-logo">
-          <canvas id="logo-canvas"></canvas> {/*the actual gradient */}
+          <canvas id="logo-canvas"></canvas> {/*gradient */}
           <div className="logo-mask1">
-    <div className="homepage">
-      <div className="container-home">
-        <h1 className="name">Crambles!</h1>
-        <p className="welcome">a very fun word game!</p>
-        <Button variant="outline-secondary" className="toLevelOneButton">
-          <Link to="/Intro" className="toIntro">
-            I want to play
-          </Link>
-        </Button>{" "}
-      </div>
-      <div className="footerHomePage"></div>
-    </div> </div>
-            </div>
+            <div className="homepage">
+              <div className="container-home"> {/*text block*/}
+                <h1 className="name">Crambles!</h1>
+                <p className="welcome">a very fun word game!</p>
+                <Button
+                  variant="outline-secondary"
+                  className="toLevelOneButton"
+                >
+                  <Link to="/Intro" className="toIntro">
+                    I want to play
+                  </Link>
+                </Button>{" "}
+              </div>
+              <div className="footerHomePage"></div>
+            </div>{" "}
           </div>
-    
+        </div>
+      </div>
     </section>
   );
 }
 export default Home;
-
-
-
-
-
-
-
-
 
 //   return (
 
@@ -123,7 +118,6 @@ export default Home;
 //                 <Button className="buttonP5">
 //                   <Link to="/Level1">I'll help you!</Link>
 //                 </Button>{" "}
-             
 
 //   // at the end of the animation, a button will appear to take the player to Level1
 // }
