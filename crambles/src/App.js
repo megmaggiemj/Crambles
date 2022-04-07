@@ -8,7 +8,6 @@ import Level1 from "./Components/Level1/Level1";
 import Level2 from "./Components/Level2/Level2";
 import Level3 from "./Components/Level3/Level3";
 import GameFinish from "./Components/GameFinish/GameFinish";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 import Testing from "./Components/ParallaxTest/ParallaxTest";
 // import GradientTest from "./Components/GradientTest/GradientTest";

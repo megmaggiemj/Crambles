@@ -56,8 +56,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  background-attachment: scroll;
+  height: 120vh;
   padding: 10px;
   color: white;
   font-family: 'Rubik Microbe', cursive;
@@ -74,7 +73,7 @@
   background: rgba(0, 0, 0, 0.5);
   margin-left: 10%;
   margin-right: 10%;
-  margin-top: auto;
+  margin-top: 10%;
   box-shadow: 2px 2px 5px black;
   padding-bottom: 20px;
   text-align: center;
