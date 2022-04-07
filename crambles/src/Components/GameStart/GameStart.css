@@ -58,7 +58,7 @@
 }
 .monster {
   margin-top: 10px;
-  margin-bottom: -42px ;
+  margin-bottom: -42px;
   transform: translate(0%, 8%);
   transition: transform 0.6s ease-in;
   transition: transform 0.3s ease-out;
@@ -79,29 +79,37 @@
   position: relative;
   color: white;
   font-size: 1rem;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   text-shadow: none;
-  text-shadow: 0 1px 0 black,
-               0 2px 0 black,
-               0 2px 1px black,
-               1px 2px 1px black;
+  text-shadow: 0 1px 0 black, 
+    0 2px 0 black, 
+    0 2px 1px black, 
+    1px 2px 1px black;
 }
-#Conversation, .hiThere {
-  font-family: 'Rubik', sans-serif;
-    font-size: 1.1rem;
-    font-weight: 700;
-  }
+#Conversation,
+.hiThere {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
 
-.buttonP2, .buttonP3, .buttonP4, .buttonP5 {
+.buttonP2,
+.buttonP3,
+.buttonP4,
+.buttonP5 {
   margin: 5px;
-  width: 118px;
-  margin: 5px;
-  font-size: .8rem;
-  height: 29px;
+  width: 120px;
+  height: 30px;
+  font-size: 0.8rem;
+}
+.buttonP2 {
+  font-size: 0.75rem;
+  width: 122px;
 }
 
 @keyframes MoveUpDown {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -111,27 +119,31 @@
 
 /* TABLET */
 @media screen and (min-width: 768px) {
-/* .bloc-logoStart {
+  /* .bloc-logoStart {
   color: white;
   font-family: 'Rubik', sans-serif;
   font-size: .8rem;
 } */
-.buttonP2, .buttonP3, .buttonP4, .buttonP5 {
-  font-size: .95rem;
-  width: 132px;
-  height: 32px;
-  font-weight: 600;
-}
-#Conversation, .hiThere {
-  font-size: 1.3rem;
-}
+  .buttonP2,
+  .buttonP3,
+  .buttonP4,
+  .buttonP5 {
+    font-size: 0.95rem;
+    width: 132px;
+    height: 32px;
+    font-weight: 600;
+  }
+  #Conversation,
+  .hiThere {
+    font-size: 1.3rem;
+  }
 }
 
 /* DESKTOP */
 @media screen and (min-width: 992px) {
   .bloc-logoStart {
     /* font-size: 1.2rem; */
-    font-size: .9rem;
+    font-size: 0.9rem;
     background-color: rgba(0, 0, 0, 0.4);
     align-items: center;
     margin-top: 10%;
@@ -140,12 +152,16 @@
     margin-bottom: 10%;
     font-weight: 700;
   }
-  .buttonP2, .buttonP3, .buttonP4, .buttonP5 {
+  .buttonP2,
+  .buttonP3,
+  .buttonP4,
+  .buttonP5 {
     width: 150px;
     height: 35px;
     font-weight: 600;
   }
-  #Conversation, .hiThere {
+  #Conversation,
+  .hiThere {
     font-size: 1.35rem;
   }
 }
