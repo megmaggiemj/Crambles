@@ -18,7 +18,7 @@ const Level2 = () => {
   const lightIcon = `https://i.imgur.com/ACFhlWk.png`
 
   const CheckAnswer = () => {
-    if (Riddles[randomNumber].answer[0] === guess || Riddles[randomNumber].answer[1] === guess) {
+    if (Riddles[randomNumber].answer[0] === guess.trimStart().trimEnd() || Riddles[randomNumber].answer[1] === guess) {
       setFeedback("That's it! That's the answer!");
       setButton2("go to level 3");
       setButton1("");
@@ -34,7 +34,7 @@ const Level2 = () => {
   };
 
   const onChange = (event) => {
-    let input = event.target.value.toLowerCase().trim();
+    let input = event.target.value.toLowerCase();
     setGuess(input);
   };
   return (

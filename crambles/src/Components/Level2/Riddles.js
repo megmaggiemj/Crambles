@@ -22,7 +22,7 @@ const Riddles = [
   },
   {
     riddle: "What is always in front of you but cannot be seen?", 
-    answer: ["The future", "future"]
+    answer: ["the future", "future"]
   },
   {
     riddle: "What gets wet while drying?",
@@ -30,27 +30,27 @@ const Riddles = [
   },
   {
     riddle: "What can’t talk but will reply when spoken to?",
-    answer: ["An echo", "echo"]
+    answer: ["an echo", "echo"]
   },
   {
     riddle: "You walk into a room that contains a match, a kerosene lamp, a candle and a fireplace. What would you light first?",
-    answer: ["The match", "match"]
+    answer: ["the match", "match"]
   },
   {
     riddle: "I follow you all the time and copy your every move, but you can’t touch me or catch me. What am I?",
-    answer: ["Your shadow", "shadow"]
+    answer: ["your shadow", "shadow"]
   },
   {
     riddle: "What building has the most stories?",
-    answer: ["The library", "library"]
+    answer: ["the library", "library"]
   },
   {
     riddle: "What kind of coat is best put on wet?",
-    answer: ["A coat of paint", "paint", "paint coat"]
+    answer: ["a coat of paint", "paint", "paint coat"]
   },
   {
     riddle: "I am an odd number. Take away a letter and I become even. What number am I?",
-    answer: ["Seven", "7"]
+    answer: ["seven", "7", "the number seven"]
   }
 ];
 export default Riddles;
