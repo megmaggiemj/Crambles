@@ -114,11 +114,9 @@
 
 /* TABLET */
 @media screen and (min-width: 768px) {
-  /* .bloc-logoStart {
-  color: white;
-  font-family: 'Rubik', sans-serif;
-  font-size: .8rem;
-} */
+.bloc-logoStart {
+    margin-top: 5%;
+}
   .buttonP2,
   .buttonP3,
   .buttonP4,
@@ -141,7 +139,7 @@
     font-size: 0.9rem;
     background-color: rgba(0, 0, 0, 0.4);
     align-items: center;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 10%;

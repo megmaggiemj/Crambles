@@ -15,24 +15,24 @@ function Home() {
           gradients: [
             [
               { color: "#833ab4", pos: 0.2 },
-              { color: "#ff8c00", pos: 0.8 },
+              { color: "#5C9AFF", pos: 0.8 },
               { color: "#38ef7d", pos: 1 },
             ],
             [
               { color: "#40e0d0", pos: 0 },
               { color: "#ff8c00", pos: 0.2 },
               { color: "#ff0080", pos: 0.75 },
-              { color: "#38ef7d", pos: 1 },
             ],
           ],
-          transitionSpeed: 6000,
+          transitionSpeed: 7000,
+          loop: true
         },
       },
     });
+    
   }, []);
   return (
     <section className="introHome">
-      <div className="TEST367">
         <div className="bloc-logo">
           <canvas id="homeGradient"></canvas> {/*gradient */}
           <div className="logo-mask1">
@@ -53,7 +53,6 @@ function Home() {
             </div>{" "}
           </div>
         </div>
-      </div>
     </section>
   );
 }
