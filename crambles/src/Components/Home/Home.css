@@ -18,7 +18,7 @@
                1px 2px 1px black;
 
 }
-#logo-canvas { /*gradient*/
+#homeGradient { /*gradient*/
   height: 100%;
   width: 100%;
   position: absolute;
@@ -30,7 +30,7 @@
   left: 0;
   z-index: 0;
 }
-.intro,
+.introHome,
 .logo-mask1 {
   display: grid;
 
@@ -73,7 +73,7 @@
   background: rgba(0, 0, 0, 0.5);
   margin-left: 8%;
   margin-right: 8%;
-  margin-top: 10%;
+  margin-top: 20%;
   box-shadow: 2px 2px 5px black;
   padding-bottom: 20px;
   padding-left: 10px;
@@ -116,7 +116,7 @@
 .homepage .container-home {
   margin-left: 8%;
   margin-right: 8%;
-  margin-top: 8%;
+  margin-top: 10%;
   padding-bottom: 20px;
   text-align: center;
 }
@@ -136,7 +136,7 @@
 .homepage .container-home {
   margin-left: 8%;
   margin-right: 8%;
-  margin-top: 8%;
+  margin-top: 10%;
   padding-bottom: 20px;
   text-align: center;
 }
